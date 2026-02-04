@@ -1,0 +1,46 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+
+  padding: 0.6em 1.2em;
+  border-radius: var(--radius-md);
+
+  font-size: var(--text-sm);
+  font-weight: 500;
+  line-height: 1;
+
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+
+  transition: background-color 0.2s ease,
+  color 0.2s ease,
+  box-shadow 0.2s ease;
+}
+
+/* Primary */
+.btn--primary {
+  background: rgb(var(--primary));
+  color: rgb(var(--text-inverse));
+
+  &:hover { background: rgb(var(--primary-hover)); }
+}
+
+/* Secondary */
+.btn--secondary {
+  background: rgb(var(--surface-muted));
+  color: rgb(var(--text-primary));
+}
+
+/* Ghost */
+.btn--ghost {
+  background: transparent;
+  color: rgb(var(--primary));
+
+  &:hover { background: rgb(var(--surface-muted)); }
+}
+
+/* Disabled */
+.btn:disabled, .btn[aria-disabled='true'] { opacity: 0.5; cursor: not-allowed; }

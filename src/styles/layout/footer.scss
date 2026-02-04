@@ -1,0 +1,41 @@
+.footer {
+  border-top: 1px solid rgb(var(--border));
+  background: rgb(var(--surface-muted));
+
+  &__inner {
+    padding-block: var(--space-6);
+    display: grid;
+    gap: var(--space-5);
+  }
+
+  &__brand p {
+    color: rgb(var(--text-muted));
+    max-inline-size: 40ch;
+  }
+
+  &__nav {
+    & ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    & li { margin-bottom: var(--space-2); }
+
+    & a {
+      text-decoration: none;
+      color: rgb(var(--text-secondary));
+
+      &:hover { color: rgb(var(--primary)); }
+    }
+  }
+
+  &__meta {
+    font-size: var(--text-sm);
+    color: rgb(var(--text-muted));
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__inner { grid-template-columns: 2fr 1fr 1fr; }
+}

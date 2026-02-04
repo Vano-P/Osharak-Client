@@ -1,0 +1,55 @@
+/* Base text */
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--line-normal);
+  color: rgb(var(--text-primary));
+  background: rgb(var(--bg));
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: var(--line-tight);
+  color: rgb(var(--text-primary));
+  margin: 0;
+}
+
+/* Scale */
+h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: var(--space-5); }
+
+h2 { font-size: clamp(1.75rem, 4vw, 2.25rem); margin-bottom: var(--space-4); }
+
+h3 { font-size: var(--text-2xl); margin-bottom: var(--space-3); }
+
+h4 { font-size: var(--text-xl); margin-bottom: var(--space-3); }
+
+h5 { font-size: var(--text-lg); }
+
+h6 { font-size: var(--text-base); }
+
+/* Paragraphs */
+p {
+  margin: 0 0 var(--space-4);
+  color: rgb(var(--text-secondary));
+  max-inline-size: 65ch;
+}
+
+/* Small text */
+small { font-size: var(--text-sm); color: rgb(var(--text-muted)); }
+
+/* Links */
+a { color: rgb(var(--primary));
+
+  &:hover {color: rgb(var(--primary-hover))}
+}
+
+/* Lists */
+ul, ol { margin: 0 0 var(--space-4) var(--space-5); }
+
+li { margin-bottom: var(--space-2); }
+
+/* Strong / emphasis */
+strong { font-weight: 600; }
+
+em { font-style: italic;}

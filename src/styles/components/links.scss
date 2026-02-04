@@ -1,0 +1,8 @@
+.link {
+  color: rgb(var(--primary));
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+
+  &:hover { color: rgb(var(--primary-hover)); }
+}
+

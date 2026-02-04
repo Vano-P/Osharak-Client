@@ -1,0 +1,47 @@
+{
+  "name": "osharak",
+  "homepage": "https://vano-p.github.io/Osharak/",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "assets:icons": "node scripts/icons.mjs",
+    "assets:images": "node scripts/images.mjs",
+    "assets:og": "node scripts/og.mjs",
+    "assets:build": "npm run assets:icons && npm run assets:images && npm run assets:og",
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "axios": "^1.13.4",
+    "date-fns": "^4.1.0",
+    "i18next": "^25.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
+    "react-hook-form": "^7.71.1",
+    "react-i18next": "^16.5.4",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.12.0",
+    "tailwindcss": "^4.1.18",
+    "zustand": "^5.0.11"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "gh-pages": "^6.3.0",
+    "globals": "^16.5.0",
+    "sass-embedded": "^1.97.2",
+    "vite": "^7.2.4"
+  }
+}

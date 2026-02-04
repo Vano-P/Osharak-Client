@@ -1,0 +1,33 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "contact": "Contact",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout"
+  },
+  "auth": {
+    "registerTitle": "Create account",
+    "register": "Register",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "loginTitle": "Sign in",
+    "login": "Login",
+    "password": "Password"
+  },
+  "hero": {
+    "title": "Premium syrups for bars and restaurants",
+    "subtitle": "Natural ingredients. Professional quality.",
+    "cta": "View products"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred. Please try again later.",
+    "code": "Error code"
+  }
+}
