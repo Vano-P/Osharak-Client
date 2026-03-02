@@ -10,6 +10,7 @@ import {FiLogIn} from 'react-icons/fi'
 const HeaderActions = () => {
   const isAuthenticated = useAuthStore((s) => s.isAuthenticated)
 
+
   return (
     <div className="header__actions flex items-center gap-2">
       {!isAuthenticated ? (

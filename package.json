@@ -1,6 +1,6 @@
 {
   "name": "osharak",
-  "homepage": "https://vano-p.github.io/Osharak/",
+  "homepage": "https://vano-p.github.io/Osharak-Client/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,8 +13,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
